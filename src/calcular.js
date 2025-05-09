@@ -11,6 +11,31 @@
 
 function calcular(num1, num2, operador) {
   // TODO: implementar função
+  let soma = num1 + num2
+  let subtrair = num1 - num2
+  let multiplicar = num1 * num2
+  let dividir = num1 / num2
+  if (operador === "+" && num1 === typeof (Number) && num2 === typeof (Number)) {
+    return soma
+  }
+  else if (operador === "-" && num1 === typeof (Number) && num2 === typeof (Number)) {
+    return subtrair
+  }
+  else if (operador === "*" && num1 === typeof (Number) && num2 === typeof (Number)) {
+    return multiplicar
+  }
+  else if (operador === "/" && num1 === typeof (Number) && num2 === typeof (Number)) {
+    return dividir
+  }
+  else if (num1 !== typeof (Number) || num2 !== typeof (Number)) {
+    return "Erro: parâmetros inválidos"
+  }
+  else if (num2 === 0 && operador == "/") {
+    return "Erro: divisão por zero"
+  }
+  else if (operador !== "+" && operador !== "-" && operador !== "*" && operador !== "/") {
+    return "Erro: operação inválida"
+  }
 }
 
 

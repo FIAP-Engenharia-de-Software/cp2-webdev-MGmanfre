@@ -10,7 +10,8 @@
 // - Remove espaços extras no início e no final da frase antes de realizar a verificação.
 
 function verificarPalavra(frase, palavraBusca) {
-  // TODO: implementar função
+  // TODO: implementar função 
+
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

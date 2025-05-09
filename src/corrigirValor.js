@@ -6,6 +6,12 @@
 
 function corrigirValor(valor) {
   // TODO: implementar função
+  if (typeof (valor) === String) {
+    return parseFloat(valor)
+  }
+  else {
+    return "Valor inválido"
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO
